@@ -1,0 +1,59 @@
+html {
+	font-size: 12px;
+}
+
+li { 
+    margin-bottom: 1%;
+}
+
+p {
+	font-size: 16px;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+.navbar-brand {
+    background-color: royalblue;
+    color: black;
+    font-weight: bold;
+    border: 3px black;
+    border-radius: 4px;
+}
+
+#bodyinput {
+    width: 50%;
+}
+
+.jumbotron {
+	overflow: hidden;
+    background-size: 50%;
+    background-position: center;
+    background-image: url('../images/miami-herald-slider.png');
+    background-repeat: no-repeat;
+    background-color: royalblue;
+    height: 240px;
+    width: 100%;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 10px;
+}
+
+.panel-heading.row {
+	width: 100%;
+    margin-left: 0%;
+    background-color: rgb(115, 215, 233);
+    color: black;
+    font-weight: bold;
+}
+
+.panel-primary {
+    height: 135px;
+}
+
+#savenote {
+    display: block;
+}
+
+@media screen and (max-width: 640px) {
+	
+}
