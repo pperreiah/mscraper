@@ -34,7 +34,12 @@ app.use("/", routes);
 
 //Added to heroku mongolab
 // mongoose.connect("mongodb://heroku_<address>.mlab.com:25262/heroku_<address>");
-mongoose.connect("mongodb://localhost/miamiheralddb");
+mongoose.connect("mongodb://plp4consult@gmail.com:Pizzas10!@ds121898.mlab.com:21898/heroku_mv48lg7t")
+// mongoose.connect("mongodb://localhost/miamiheralddb");
+
+// mongoose.connect("mongodb://heroku_gnzk5747:4d2121nhgnfbdl1pfirsdepk9n@ds125262.mlab.com:25262/heroku_gnzk5747");
+
+
 
 var db = mongoose.connection;
 

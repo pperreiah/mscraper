@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
   res.render("index");
 });
 
-// Scrape articles, save to db, render savedarticles page
+// Render savedarticles page
 router.get("/savedarticles", function(req, res) {
 
   // Get docs from Articles array
@@ -51,7 +51,6 @@ router.post("/scrape", function(req, res) {
       result.link = $(this).children("a").attr("href");
 
       scrapedArticles[i] = result;
-
     });
 
     var hbsArticleObject = {
