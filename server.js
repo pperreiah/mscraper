@@ -33,9 +33,12 @@ var routes = require("./controllers/miamiheraldscraper_controller.js");
 app.use("/", routes);
 
 //Added to heroku mongolab
-// mongoose.connect("mongodb://heroku_<address>.mlab.com:25262/heroku_<address>");
-// mongoose.connect("mongodb://plp4consult@gmail.com:Pizzas10!@ds121898.mlab.com:21898/heroku_mv48lg7t")
-mongoose.connect("mongodb://localhost/miamiheralddb");
+// mongoose.connect("mongodb://localhost/miamiheralddb");
+mongoose.Promise = global.Promise;
+// Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/miamiheralddb"
+);
 
 var db = mongoose.connection;
 
